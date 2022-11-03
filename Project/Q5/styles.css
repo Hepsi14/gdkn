@@ -1,0 +1,16 @@
+.fixed{
+    /*  position must be fixed */
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    border: 3px solid #d120b1;
+  } 
+  
+  .absolute {
+    position: absolute; /* position might be change*/
+    top: 80px;
+    right: 10;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+  }

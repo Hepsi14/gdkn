@@ -1,0 +1,58 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .imgbox {
+          float: left;
+          text-align: center;
+          width: 120px;
+          border: 1px solid gray;
+          margin: 4px;
+          padding: 6px;
+        }
+        
+        button {
+          width: 100%;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h3>4)Difference between display:none and visiblity: hidden</h3>
+        
+        
+        <div class="imgbox" id="imgbox1">Box 1<br>
+          
+          <button onclick="removeElement()">Remove</button>
+        </div>
+        
+        <div class="imgbox" id="imgbox2">Box 2<br>
+         
+          <button onclick="changeVisibility()">Hide</button>
+        </div>
+        <div class="imgbox" id="imgbox1">Box 1<br> 
+            <button onclick="removeElement()">Remove</button>
+          </div>
+        
+        
+        <script>
+        function removeElement() {
+          document.getElementById("imgbox1").style.display = "none";
+        }
+        
+        function changeVisibility() {
+          document.getElementById("imgbox2").style.visibility = "hidden";
+        }
+        
+        
+        </script>
+        
+        </body>
+</html>

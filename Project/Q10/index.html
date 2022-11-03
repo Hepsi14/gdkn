@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a.a:active {   /* active event*/
+        background-color: yellow;
+        color: red
+        }
+        a.b:visited {   /* visited event*/
+         color: pink;
+        }
+        a.c:hover {   /* hover event*/
+         color: green;
+        }
+       
+div {   /* scroll event*/
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
+}
+
+
+    </style>
+</head>
+<body>
+   <h2>10)How can you alter events with CSS? Like scroll, hover, active, clicked, visited?</h2> 
+   <u>  <h2>Active Events</h2></u>
+    <a class="a" href="https://www.w3schools.com">W3schools.com> </a><br> <!--active event -->
+
+    <u>  <h2>Visited Events</h2></u>
+    <a class="b" href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a><br> <!--visited event -->
+  
+    <u>  <h2>Hover Events</h2></u>
+
+    <a class="c" href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a><br>  <!--hover event -->
+
+      <!--click event -->  
+       <u>  <h2>Click Events</h2></u>
+        <h2 onclick="this.innerHTML='Ooops!'">Click on this text!</h2>
+
+      <!--scroll event -->  
+      <u>  <h2>Scroll Events</h2></u>
+        <div onscroll="myFunction()">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+            <br><br>
+            'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
+            <p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You scrolled in div.";
+}
+</script>
+</body>
+</html>
